@@ -7,12 +7,25 @@
     <title>小张科技工作室</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.png" type="image/png">
+    
 </head>
 
 <body>
     <div class="container">
         <h1>小张科技工作室</h1>
-        <body>
+        
+        
+        <div class="web_notice" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); z-index: 99999;">
+            <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; background: #FFF; border-radius: 40px; padding: 50px 40px;">
+                <h3 style="font-weight: bold; text-align: center; font-size: 30px;">网站通知</h3>
+                <div style="font-size: 16px; margin-top: 26px; line-height: 30px; color: #999;">
+                    本站还活着
+                </div>
+                <a href="#" style="display: block; background: #66ccff; color: #FFF; text-align: center; font-weight: bold; font-size: 19px; line-height: 60px; margin: 0 auto; margin-top: 45px; border-radius: 32px; width: 80%;" onclick="javascript:document.querySelector('.web_notice').remove()">我知道了</a>
+            </div>
+        </div>
+        
+        </script>
             <h3 id="hitokoto">正在获取...</h3>
         
             <script>
@@ -31,7 +44,7 @@
                         document.getElementById('hitokoto').textContent = '获取失败';
                     });
             </script>
-        </body>
+        
         <p>欢迎来到小张科技工作室的官方网站。我们致力于提供高质量的技术服务和解决方案。</p>
 
         <h2>QQ机器人介绍</h2>
@@ -62,6 +75,7 @@
         <div class="sponsor">
             <img src="sponsor.jpg" alt="赞助图片">
         </div>
+    
         <body>
             <p>您的IP地址是：</p>
             <p id="user-ip">正在获取...</p>
